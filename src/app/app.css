@@ -1,0 +1,130 @@
+:host {
+  min-height: 100vh;
+  display: block;
+  color: #202a3a;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #f7f3ea 0%, #eef4f1 100%);
+}
+
+main {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 48px 0 64px;
+}
+
+header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: #b5651d;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: clamp(32px, 6vw, 56px);
+  line-height: 1;
+}
+
+.count {
+  padding: 8px 12px;
+  border: 1px solid #d7d0c2;
+  border-radius: 999px;
+  color: #667085;
+  background: rgba(255,255,255,.65);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.book-card {
+  position: relative;
+  min-height: 290px;
+  overflow: hidden;
+  border: 1px solid rgba(32,42,58,.09);
+  border-radius: 18px;
+  background: rgba(255,255,255,.88);
+  box-shadow: 0 12px 30px rgba(75, 83, 72, .08);
+}
+
+.book-mark {
+  height: 9px;
+  background: linear-gradient(90deg, #b5651d, #d8a35d);
+}
+
+.card-content {
+  padding: 24px;
+}
+
+.genre {
+  color: #8b5e2b;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 12px 0 8px;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  line-height: 1.15;
+}
+
+.author {
+  margin: 0;
+  color: #596579;
+  font-weight: 700;
+}
+
+.description {
+  margin: 20px 0;
+  color: #737d8c;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.metadata span {
+  padding: 6px 9px;
+  border-radius: 6px;
+  color: #667085;
+  background: #f1f4f1;
+  font-size: 12px;
+}
+
+.message {
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  background: white;
+}
+
+.error {
+  color: #a23b3b;
+}
+
+@media (max-width: 600px) {
+  main { width: min(100% - 24px, 1180px); padding-top: 28px; }
+  header { align-items: start; }
+  .count { white-space: nowrap; }
+}

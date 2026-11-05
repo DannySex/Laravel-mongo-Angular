@@ -1,0 +1,15 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  background: #f4f7fb;
+}
+
+.card {
+  border: 0;
+}
+
+button:disabled {
+  cursor: wait;
+}
+
+/* You can add global styles to this file, and also import other style files */
